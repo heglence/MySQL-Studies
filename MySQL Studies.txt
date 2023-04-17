@@ -1,0 +1,26 @@
+#1)SQL-Structured Query Language-Yapılandırılmış Sorgu Dili
+
+#2)Bir yazılımın olmazsa olmaz 3 saçayağı vardır.
+-User Interface-UI-kullanıcı arayüzü yani mesela facebook login ekranı.
+-Database-veritabanı
+-API-getir götür işlerini yapar.ui ve database arası bağlantıyı sağlar.
+
+#3)API:Application Programming Interface-Uygulama Programlama Arayüzü
+Bir yazılımın başka bir yazılımda tanımlanmış işlevlerini kullanabilmesi için
+oluşturulmuş bir arayüzdür.
+
+#4)Database nedir: Veritabanı-verilerin depolandığı yer.
+Verilerin saklandığı her yer  database'dir. beyin,defter vs.
+Elektronik olarak bir bilgisayar sisteminde depolanan yapılandırılmış
+bilgi veya veriden oluşan düzenli bir koleksiyondur.
+
+#5)Database'in Faydaları Nelerdir:
+	1)Yüksek miktarda bilgi depolanabilir.
+	2)Oluşturma, Okuma, Değiştirme ve Silme 	Kolaylığı
+  	 Create,    Read, Update        ,Delete     	(CRUD)
+	3)Girişin kolay  ve kontrollü olması
+	4)Veriye ulaşım kolaylığı
+	5)Güvenlik
+
+
+
