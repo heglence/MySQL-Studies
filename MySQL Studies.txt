@@ -22,7 +22,6 @@ bilgi veya veriden oluşan düzenli bir koleksiyondur.
 	4)Veriye ulaşım kolaylığı
 	5)Güvenlik
 
-.
 
 
 
