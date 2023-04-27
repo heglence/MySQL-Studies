@@ -31,6 +31,41 @@ bilgi veya veriden oluşan düzenli bir koleksiyondur.
 -Raporlar oluşturur ve işletir.
 -Uygulamayı kontrol eder.
 -Diğer uygulamalarla (Application) iletişimi sağlar.
+#7)Relational Databes (İlişkili Tablo)(SQL)
+tabloları anlamlı kategorilere bölüp, tablolar arası bağ kurarız.
+Her tablo kendi içinde başka tablolarla bağ kurarak oluşturulur.
+Relational Databases , SQL Databases (Structured Query Language) olarak da adlandırılır.
+
+#8)SQL tablolar dataları ilişkili tablolarda depolar.
+-Tablolar arası ilişkiler net olmalıdır.
+Tablolar arası geçiş kolay olmalıdır.
+Tabloların ve ilişkilerin bütününe SCHEMA denir.
+
+#9)NoSQL(Non-Relational Databases) veritabanı verilerle çalışırken Yapılandırılmamış 
+sorgu dili kullanır.
+
+#10)SQL KOMUTLARI
+4 ana gruba ayrılır.
+.1)Veri Sorgulama Dili (DQL)
+SELECT: Veritabanındaki verileri alır.
+
+.2)Veri Kullanma Dili (DML) (Tablo içindeki verileri)
+INSERT:Veritabanına yeni veri ekler.
+UPDATE:Veritabanındaki verileri günceller.
+DELETE:Veritabanındaki verileri siler.
+
+.3)Veri Tanımlama Dili (DDL) (Tabloları)
+CREATE:Veritabanı veya veritabanı içinde tablo oluşturur.
+ALTER: Veritabanı veya veritabanı içinde tabloyu günceller.
+DROP: Veritabanı veya veritabanı içinde tabloyu siler.
+
+.4) Veri Kontrol Dili (DCL)
+GRANT:Bir kullanıcıya yetki vermek için.
+REVOKE:Bir kullanıcıya verilen yetkiyi geri almak için kullanılır.
+
+
+
+
 
 
 
