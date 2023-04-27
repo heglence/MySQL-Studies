@@ -22,6 +22,17 @@ bilgi veya veriden oluşan düzenli bir koleksiyondur.
 	4)Veriye ulaşım kolaylığı
 	5)Güvenlik
 
+#6)Database Management System (DBMS)-Veritabanı Yönetim Sistemi
+-Database'e erişimi düzenler.
+-CRUD işlemlerini düzenler.
+-Data güvenliği sağlar.
+-Formlar oluşturur ve işletir.
+-Sorguar oluşturur ve işletir.
+-Raporlar oluşturur ve işletir.
+-Uygulamayı kontrol eder.
+-Diğer uygulamalarla (Application) iletişimi sağlar.
+
+
 
 
 
