@@ -78,6 +78,16 @@ için bir vekil/tanımlayıcı (identify görevi görür, kısıtlamadır (const
 - primary key gerçek dış dünyada bir şeyi temsil ediyorsa Natural Key,
  tabloda kayıt için verilen ürün sıra numarası gibi bir değer ise Surrogate Key denir.
 -primary key'in tek başına var olması hiçbir anlam ifade etmez.
+#12)FOREİGN KEY 
+-primary key'i primary key yapan foreign key'dir.
+-2 tablo arasında relation-ilişki oluşturmak için kullanılır.
+-Foreign key başka bir tablodaki Primary Key ile ilişkilendirilmiş olmalıdır.
+-en önemli 2 özellik
+  .Foreign Key NULL değer alabilir.
+  .Foreign Key olarak tanımlanan field'da tekrarlar olabilir. Yani unique olması şart değil, duplicate-kopyalara izin verebilir.
+-Bir tabloda birden fazla Foreign Key olabilir.
+-Değerleri farklı bir tablodaki Primary Key ile eşleşen bir sütun veya sütunların birleşimidir.
+
 
 
 
