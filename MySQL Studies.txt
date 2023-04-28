@@ -87,6 +87,25 @@ için bir vekil/tanımlayıcı (identify görevi görür, kısıtlamadır (const
   .Foreign Key olarak tanımlanan field'da tekrarlar olabilir. Yani unique olması şart değil, duplicate-kopyalara izin verebilir.
 -Bir tabloda birden fazla Foreign Key olabilir.
 -Değerleri farklı bir tablodaki Primary Key ile eşleşen bir sütun veya sütunların birleşimidir.
+#13)COMPOSITE KEY
+-Birden fazla field'ın kombinasyonu ile oluşturulur.
+-Bir field tek başına primary key özelliği taşımıyorsa oluşturulabilir.
+-örnek üni no.12-01-06-0098
+
+#14)UNIQUE KEY (benzersiz)
+-Bir tabloda birden fazla olabilir.(bir field'da değil ,tabloda birden fazla unique field olabilir.
+- Field içinde birden fazla  NULL değer alabilir. Ancak data tipi String ise ‘ ‘ hiçlik değerini sadece 1 kez alabilir.
+-Duplication-çift kullanım'a izin vermez.
+
+#15)ONE TO ONE RELATION (Bire bir ilişki)
+-1 adet tablo büyüyünce ikiye bölüp, ilkindeki primary key ikinci tabloda foreign key olmuştur.
+-(kendi yorumum.iki tabloda da tek field primary key ortaktır. bir record sadece diğer tablodaki bir record ile eşleşir.
+
+ONE TO MANY RELATİON (Birden çoğa ilişki)
+-Bir record diğer tabloda birden fazla recordla ilişki kurar
+
+MANY TO MANY RELATION (2 taraftan da birden fazla yere erişim )
+
 
 
 
