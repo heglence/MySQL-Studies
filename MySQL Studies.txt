@@ -104,7 +104,7 @@ için bir vekil/tanımlayıcı (identify görevi görür, kısıtlamadır (const
 ONE TO MANY RELATİON (Birden çoğa ilişki)
 -Bir record diğer tabloda birden fazla recordla ilişki kurar
 
-MANY TO MANY RELATION (2 taraftan da birden fazla yere erişim)
+MANY TO MANY RELATION (2 taraftan da birden fazla yere erişim).
 
 
 
