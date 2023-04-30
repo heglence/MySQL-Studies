@@ -136,6 +136,11 @@ table olustururken field isminin yanina NOT NULL yaziyoruz. . -- <isim VARCHAR (
 -- UNIQUE olarak belirledigimiz bir field'a istedigimiz kadar NULL deger kaydedebiliriz
 -- ancak data tipi String ise hiclik ifadesini sadece 1 kere kaydeder, diger kayitlarda duplicate hatasi verir.
 
+#18))DROP TABLE:  
+DROP TABLE  fen_lisesi;  -- tabloyu siler.
+#2) Mevcut bir tabloya tüm field’lara değil daha az field’a veri girmek için
+	INSERT INTO anadolu_lisesi (okul_no, isim, derece) VALUES (‘1006’,’Mehmet Emre’, ‘4.2’);
+	Normalde adres vs field da var ama onları null kaydediyor. Tablo oluştururkenki sıraya koymamız şart değil ama insert yaparken iki parantez içinin sırası aynı olmalı.
 
 
 
