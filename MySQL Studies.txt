@@ -126,6 +126,15 @@ INSERT INTO fen_lisesi (adres,isim,derece)
 -- ayrica MySQL 'in default tarih formati YYYY-MM-DD seklindedir.
 -- char string bir deger ama icine sadece sayi mesela okul no girersek tek tirnak icine almasak da oluyor
 
+#17)UNIQUE,NOT NULL:
+-> Bir field'a kaydedilecek verileri UNIQUE yapmak icin   -- <okul_no CHAR(3) UNIQUE,>
+ table olustururken field isminin yanina UNIQUE yaziyoruz.
+-> Bir field'a kaydedilecek verilerde null olmasin istiyorsak 
+table olustururken field isminin yanina NOT NULL yaziyoruz. . -- <isim VARCHAR (25) NOT NULL,>
+*********************************************************/
+
+-- UNIQUE olarak belirledigimiz bir field'a istedigimiz kadar NULL deger kaydedebiliriz
+-- ancak data tipi String ise hiclik ifadesini sadece 1 kere kaydeder, diger kayitlarda duplicate hatasi verir.
 
 
 
