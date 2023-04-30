@@ -107,6 +107,24 @@ ONE TO MANY RELATİON (Birden çoğa ilişki)
 MANY TO MANY RELATION (2 taraftan da birden fazla yere erişim). 
 
 
+#16)SELECT * FROM:
+SELECT * FROM öğrenciler;   -- bu komut çalışınca oluşturulan tabloyu gösterir. * all anlamı taşır.
+
+ INSERT INTO - VERİ GİRİŞİ:
+INSERT INTO + tablo adi + VALUES + (std_id CHAR(4),std_name VARCHAR(25),std_age int)
+INSERT INTO fen_lisesi VALUES (101,’Mehmet Dag’, 4.5, ‘Ankara’, ‘2023-01-20’);
+
+Çoklu ise 
+INSERT INTO fen_lisesi VALUES
+ (101,’Mehmet Dag’, 4.5, ‘Ankara’, ‘2023-01-20’),
+(102,’Mehmet Tag’, 4.5, ‘Izmir, ‘2023-01-20’);
+
+INSERT INTO fen_lisesi (adres,isim,derece)
+-- Degerleri girerken dikkat edilmesi gereken Tabloyu olustururken degerleri atadigimiz veri cinsinden olmasi
+-- String ifadeleri tek tirnak icinde yaziyoruz.
+-- Date data tipi de String gibi tek tirnak icine yazilir,
+-- ayrica MySQL 'in default tarih formati YYYY-MM-DD seklindedir.
+-- char string bir deger ama icine sadece sayi mesela okul no girersek tek tirnak icine almasak da oluyor
 
 
 
