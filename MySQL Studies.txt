@@ -141,6 +141,36 @@ DROP TABLE  fen_lisesi;  -- tabloyu siler.
 #2) Mevcut bir tabloya tüm field’lara değil daha az field’a veri girmek için
 	INSERT INTO anadolu_lisesi (okul_no, isim, derece) VALUES (‘1006’,’Mehmet Emre’, ‘4.2’);
 	Normalde adres vs field da var ama onları null kaydediyor. Tablo oluştururkenki sıraya koymamız şart değil ama insert yaparken iki parantez içinin sırası aynı olmalı.
+#19) SELECT-WHERE-AND-BETWEEN
+Verileri SELECT komutu ile veritabanindan cekerken filtreleme yapmak icin : 
+ 
+SELECT ile birlikte WHERE komutu kullanilabilir.
+-----Syntax----- :
+SELECT field1, field2 
+FROM tablo_adi 
+WHERE kosul;
+-- SELECT -- hangi sutunlari(field) getirsin
+-- FROM -- hangi tablodan(table) getirsin
+-- WHERE -- hangi satirlari(record) getirsin
+
+Q: Sinav notu 70'ten buyuk esit 80'den kucuk esit olan ogrencilerin tum bilgilerini listeleyin.
+- 1. YOL 
+SELECT *
+FROM ogretmen_lisesi
+WHERE sinav_notu >= 70 AND sinav_notu<=80;
+- 2. YOL
+SELECT *
+FROM ogretmen_lisesi
+WHERE sinav_notu between 70 AND 80;
+
+-- String ifadeleri BETWEEN komutu ile kiyaslamak istedigimizde bize sonucu ASCII-alfabetik degerlerine gore siralayarak gonderir.
+String yani char olan isimleri önce kendi otomatik olarak ascii ye gore yani alfabetik olarak siraliyor. Aralık tabloda olmayan bir isim ile verilirse, o isim tabloda olsa nerede olurdu diyip ona göre listeyi getirir. 
+Örneğin tabloda Ahmet Gül ve Mesut Yılmaz var. Between Ahmet and Mesut dersek, listede bu sadece isim olan recordlar olmadığından Ahmet’i Ahmet Gül’ün gerisine, Mesut’u da Mesut Yılmaz’in bir gerisine koyar. Bize de sadece listede olan Ahmet Gül’ü getirir.
+- field içindeki string değere yanlışlıkla boşluk space dahi koysa onu almaz, cunku onu asil ismin sonrasina koyar.
+
+-String ifadelerde kendi neyi getireceğini bulmak için önce ascii'ye göre sıralama yapar, ama bize dondururken
+tablodaki siralama neyse ona gore dondurur(mesela id'ye göre). istediğimiz field'in ascii sirasina göre değil.
+-BETWEEN komutu ile belli bir araliktaki kayitlari listelemek istedigimizde;filtrelemeyi verilen araliga gore yapar, yazdirmayi da tablodaki kayit sirasina gore yapar once ascii ye gore isimleri listeler,  listede yoksa isimler olsaydi nerede olurdu  tablodaki sirasina gore siralayiip getirir.
 
 
 
