@@ -141,7 +141,7 @@ DROP TABLE  fen_lisesi;  -- tabloyu siler.
 #2) Mevcut bir tabloya tüm field’lara değil daha az field’a veri girmek için
 	INSERT INTO anadolu_lisesi (okul_no, isim, derece) VALUES (‘1006’,’Mehmet Emre’, ‘4.2’);
 	Normalde adres vs field da var ama onları null kaydediyor. Tablo oluştururkenki sıraya koymamız şart değil ama insert yaparken iki parantez içinin sırası aynı olmalı.
-#19) SELECT-WHERE-AND-BETWEEN
+#19) SELECT-WHERE-AND
 Verileri SELECT komutu ile veritabanindan cekerken filtreleme yapmak icin : 
  
 SELECT ile birlikte WHERE komutu kullanilabilir.
@@ -171,6 +171,16 @@ String yani char olan isimleri önce kendi otomatik olarak ascii ye gore yani al
 -String ifadelerde kendi neyi getireceğini bulmak için önce ascii'ye göre sıralama yapar, ama bize dondururken
 tablodaki siralama neyse ona gore dondurur(mesela id'ye göre). istediğimiz field'in ascii sirasina göre değil.
 -BETWEEN komutu ile belli bir araliktaki kayitlari listelemek istedigimizde;filtrelemeyi verilen araliga gore yapar, yazdirmayi da tablodaki kayit sirasina gore yapar once ascii ye gore isimleri listeler,  listede yoksa isimler olsaydi nerede olurdu  tablodaki sirasina gore siralayiip getirir.
+
+#20)SELECT-BETWEEN :
+BETWEEN iki mantiksal ifade ile tanimlayabilecegimiz durumlari tek komutla 
+yazabilme imkani verir, yazdigimiz iki sinirda araliga dahildir.
+-----Syntax-----
+SELECT field1,field2,...
+FROM table_name
+WHERE field_name 
+BETWEEN deger1 AND deger2;
+
 
 
 
