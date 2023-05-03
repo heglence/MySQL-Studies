@@ -181,6 +181,19 @@ FROM table_name
 WHERE field_name 
 BETWEEN deger1 AND deger2;
 
+#21)AND (ve) Operatoru kullanimi:
+=> And ile belirtilen sartlarin tamami gerceklesiyorsa o kayit listelenir,
+Sartlardan bir tanesi bile tutmazsa listelenmez.
+SELECT * FROM matematik WHERE sinav1 < 50 AND sinav2 < 50
+Bu ornekte hem sinav1 hem de sinav2 field'i 50'den kucuk olan kayitlar listelenecektir.
+
+#22)OR (veya) Operatoru kullanimi:
+=> Or ile belirtilen sartlardan en az biri gerceklesiyorsa o kayit listelenir,
+sartlardan hicbiri gerceklesmiyorsa o kayit listelenmez.
+SELECT * FROM matematik WHERE sinav1 < 50 OR sinav2 < 50
+Bu ornekte sinav1 veya sinav2 field'i 50'den kucuk olan kayitlar listelenecektir.
+
+
 
 
 
