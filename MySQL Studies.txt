@@ -193,7 +193,7 @@ sartlardan hicbiri gerceklesmiyorsa o kayit listelenmez.
 SELECT * FROM matematik WHERE sinav1 < 50 OR sinav2 < 50
 Bu ornekte sinav1 veya sinav2 field'i 50'den kucuk olan kayitlar listelenecektir.
 
-#23)SELECT-IN :
+#23)SELECT-IN : 
 IN birden fazla mantiksal ifade ile tanimlayabilecegimiz durumlari tek komutla yazabilme
 imkani verir. IN icerisine yazacagimiz sartlar ayni field'a ait olmali.
 -----Syntax-----
