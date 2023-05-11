@@ -330,6 +330,7 @@ UPDATE cocuklar
 SET veli_isim = (SELECT ders_adi
 			 FROM puanlar
              WHERE cocuklar.id = puanlar.ogrenci_id);
+
 #26)PRIMARY KEY :
 1) Primary Key bir record'u tanimlayan bir field veya birden fazla field'in kombinasyonudur. 
 2) Primary Key Unique'dir. 
