@@ -419,6 +419,30 @@ puan INT,
 CONSTRAINT notlar_fk FOREIGN KEY (bebe_id)
 REFERENCES bebeler(id)
 );
+#28)DELETE:
+DELETE FROM table_name komutu tablodaki tum recordlari siler.
+Eger tum kayitlar silindikten sonra tabloyu gormek isterseniz size sadece bos bir tablo gosterir.
+DELETE komutu sadece datalari siler, tabloyu silmez.
+-- DELETE FROM tablo_adi;  Tablonun tum icerigini siler.
+-- Bu komut bir DML komutudur. Dolayisiyla devaminda WHERE gibi cumlecikler
+-- kullanilabilir.
+    
+    -- DELETE FROM tablo_adi
+    -- WHERE field = veri;
+    
+--    DELETE FROM ogrenciler;     -- Tum verileri sil.
+--    SAVEPOINT ABC;     -- Verilen konuma kodlari kaydeder. (database'deki tüm tabloları kaydediyor, tum database yedegini alıyor.)
+--    ROLLBACK TO  ABC;  -- Silinen Verileri geri getir.
+-- Bilgileri geri getirirken sikinti yasamamak icin ayarlar sql execution auto commit tiki kaldir
+--Q -- Veli Ismi Ali ya da Ayse olan kaydi siliniz
+ DELETE FROM cucuklar
+ WHERE veli_isim = 'ali' OR veli_isim ='Ayse';
+2. yol
+ DELETE FROM cucuklar
+ WHERE veli_isim IN ('Ali', 'Ayse');
+
+#29)
+
 
 
 
