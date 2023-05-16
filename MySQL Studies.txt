@@ -477,6 +477,61 @@ WHERE sirket IN (SELECT sirket
 		   FROM sirketler
                      	   WHERE calisanlar_sayisi>'15000');
 
+#31)SELECT ile SUBQUERY
+  SELECT ile SUBQUERY kullanimi :
+-- SELECT -- hangi sutunlari(field) getirsin
+-- FROM -- hangi tablodan(table) getirsin
+-- WHERE -- hangi satirlari(record) getirsin
+
+ * Yazdigimiz QUERY'lerde SELECT satirinda field isimleri kullaniyoruz.
+  Dolayisiyla eger SELECT satirinda bir SUBQUERY yazacaksak sonucun
+  tek bir field donmesi gerekir.
+
+  * SELECT satirinda SUBQUERY yazacaksak SUM, COUNT, MIN, MAX ve AVG gibi 
+  fonksiyonlar kullanilir. Bu fonksiyonlara AGGREGATE FUNCTION denir.
+=> Interview Question : Subquery'i Select satirinda kullanirsaniz ne ile 
+kullanmaniz gerekir?
+SORU 1- Her sirketin ismini, personel sayisini ve personelin ortalama maasini listeleyen bir QUERY yazin.
+SELECT sirket,calisanlar_sayisi,(SELECT AVG(maas) 
+				FROM calisanlar
+WHERE calisanlar.sirket=sirketler.sirket) AS ort_maas -- as yeni field'a isim veriyor
+FROM sirketler;
+
+SORU 2- Her sirketin ismini ve personelin aldigi max. Maasi listeleyen bir QUERY yazin.
+SELECT sirket,(SELECT MAX(maas) 
+		FROM calisanlar
+		WHERE calisanlar.sirket=sirketler.sirket) AS max_maas
+FROM sirketler;
+
+SORU 3- Her sirketin id'sini, ismini ve toplam kac sehirde bulundugunu listeleyen bir QUERY yaziniz.
+SELECT sirket_id,sirket,(SELECT COUNT(sehir) 
+			FROM calisanlar
+			WHERE calisanlar.sirket=sirketler.sirket) AS sum_sehir
+FROM sirketler;
+
+SORU 4- ID'si 101'den buyuk olan sirketlerin id'sini, ismini ve toplam kac sehirde bulundugunu listeleyen bir QUERY yaziniz.
+SELECT sirket_id, sirket,(SELECT COUNT(sehir) 
+			FROM calisanlar
+			WHERE calisanlar.sirket=sirketler.sirket) AS sum_sehir
+FROM sirketler
+WHERE sirket_id>101;
+
+SORU 5- Her sirketin ismini,personel sayisini ve personelin aldigi max. ve min. maasi listeleyen bir QUERY yazin.
+SELECT sirket,calisanlar_sayisi,(SELECT MAX(maas) 
+				FROM calisanlar
+				WHERE calisanlar.sirket=sirketler.sirket) AS max_maas,
+             			             (SELECT MIN(maas) 
+				FROM calisanlar
+				WHERE calisanlar.sirket=sirketler.sirket) AS min_maas
+FROM sirketler;
+
+SORU 6- Her sirketin ismini ve personel sayisini ve isçilere odedigi toplam maasi listeleyen bir QUERY yazin.
+SELECT sirket, calisanlar_sayisi,(SELECT SUM(maas) 
+				FROM calisanlar
+				WHERE calisanlar.sirket=sirketler.sirket) AS iscilere_odenen_toplam_maas
+FROM sirketler;
+
+
 
 
 
