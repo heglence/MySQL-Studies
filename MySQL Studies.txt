@@ -467,6 +467,17 @@ DELETE komutu sadece datalari siler, tabloyu silmez.
     -- Silme komutlari da iki basamaklidir, biz genelde geri getirilebilecek sekilde sileriz. 
     -- Ancak bazen guvenlik gibi sebeplerle geri getirilmeyecek sekilde silinmesi istenebilir.
 
+#30)SUBQUERY
+    Sorgu icinde calisan sorguya SUBQUERY (ALT SORGU) denir.
+--Q Personel sayisi 15.000'den cok olan sirketlerin isimlerini
+ ve bu sirkette calisan personelin isimlerini listeleyin
+SELECT isim, sirket -- bu satirda hangi veli yilmaz gorelim diye sirket ismini ekledik, soruda yoktu.
+FROM calisanlar
+WHERE sirket IN (SELECT sirket
+		   FROM sirketler
+                     	   WHERE calisanlar_sayisi>'15000');
+
+
 
 
 
