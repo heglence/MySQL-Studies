@@ -124,7 +124,7 @@ INSERT INTO fen_lisesi (adres,isim,derece)
 -- String ifadeleri tek tirnak icinde yaziyoruz.
 -- Date data tipi de String gibi tek tirnak icine yazilir,
 -- ayrica MySQL 'in default tarih formati YYYY-MM-DD seklindedir.
--- char string bir deger ama icine sadece sayi mesela okul no girersek tek tirnak icine almasak da oluyor
+-- char string bir deger ama icine sadece sayi mesela okul no girersek tek tirnak icine almasak da oluyor.
 
 #17)UNIQUE,NOT NULL:
 -> Bir field'a kaydedilecek verileri UNIQUE yapmak icin   -- <okul_no CHAR(3) UNIQUE,>
