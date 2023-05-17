@@ -523,7 +523,7 @@ SELECT sirket,calisanlar_sayisi,(SELECT MAX(maas)
              			             (SELECT MIN(maas) 
 				FROM calisanlar
 				WHERE calisanlar.sirket=sirketler.sirket) AS min_maas
-FROM sirketler;
+FROM  sirketler;
 
 SORU 6- Her sirketin ismini ve personel sayisini ve isçilere odedigi toplam maasi listeleyen bir QUERY yazin.
 SELECT sirket, calisanlar_sayisi,(SELECT SUM(maas) 
