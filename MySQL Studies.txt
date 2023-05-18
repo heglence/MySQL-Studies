@@ -435,7 +435,8 @@ DELETE komutu sadece datalari siler, tabloyu silmez.
 --    ROLLBACK TO  ABC;  -- Silinen Verileri geri getir.
 -- Bilgileri geri getirirken sikinti yasamamak icin ayarlar sql execution auto commit tiki kaldir
 --Q -- Veli Ismi Ali ya da Ayse olan kaydi siliniz
- DELETE FROM cucuklar
+1. yol 
+DELETE FROM cucuklar
  WHERE veli_isim = 'ali' OR veli_isim ='Ayse';
 2. yol
  DELETE FROM cucuklar
