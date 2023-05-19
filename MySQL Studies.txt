@@ -17,7 +17,7 @@ bilgi veya veriden oluşan düzenli bir koleksiyondur.
 #5)Database'in Faydaları Nelerdir:
 	1)Yüksek miktarda bilgi depolanabilir.
 	2)Oluşturma, Okuma, Değiştirme ve Silme 	Kolaylığı
-  	 Create,    Read, Update        ,Delete     	(CRUD)
+  	 	Create,    Read, Update        ,Delete     	(CRUD)
 	3)Girişin kolay  ve kontrollü olması
 	4)Veriye ulaşım kolaylığı
 	5)Güvenlik
@@ -42,7 +42,7 @@ Tablolar arası geçiş kolay olmalıdır.
 Tabloların ve ilişkilerin bütününe SCHEMA denir.
 
 #9)NoSQL(Non-Relational Databases) veritabanı verilerle çalışırken Yapılandırılmamış 
-sorgu dili kullanır.
+  sorgu dili kullanır.
 
 #10)SQL KOMUTLARI
 4 ana gruba ayrılır.
@@ -66,12 +66,12 @@ REVOKE:Bir kullanıcıya verilen yetkiyi geri almak için kullanılır.
 #11)PRIMARY KEY (birincil anahtar):
 - bir veri tablosunda yer alan her record
 için bir vekil/tanımlayıcı (identify görevi görür, kısıtlamadır (constraint) ve eşsizdir (unique).
--çoğunlukla tek bir alan olsa da birden fazla alanın birleşimiyle de oluşturulabilir.
+ -çoğunlukla tek bir alan olsa da birden fazla alanın birleşimiyle de oluşturulabilir.
 -en önemli 2 özellik:
   .asla NULL değer alamaz.asla boş bırakamayız.
   .unique-benzersiz olmak zorundadır.
 -her tabloda primary key olmak zorunlu değildir. Ama ilişkili veritabanlarında mutlaka en az bir birincil anahtar olmalıdır.
- aralarında foreign key ile bağlantı kurabilirler,  örneğin 3 farklı tablo varsa bu 3 ünün toplamında en az 1 tane primary key olmalı, aralarındaki bağlantıyı zaten bu primary key ile bağlayabiliriz.
+ aralarında foreign key ile bağlantı kurabilirler,  örneğin 3 farklı tablo varsa bu 3 ünün toplamında en az 1 tane primary key olmalı, aralarındaki bağlantıyı zaten bu     primary key ile bağlayabiliriz.
 -bir tabloda sadece 1 tane primary key olabilir.
 -her primary key unique-benzersizdir, ancak her Unique primary key değil.
 -primary key her türlü datayı içerebilir. sayi, string vs.
@@ -117,7 +117,7 @@ INSERT INTO fen_lisesi VALUES (101,’Mehmet Dag’, 4.5, ‘Ankara’, ‘2023-
 Çoklu ise 
 INSERT INTO fen_lisesi VALUES
  (101,’Mehmet Dag’, 4.5, ‘Ankara’, ‘2023-01-20’),
-(102,’Mehmet Tag’, 4.5, ‘Izmir, ‘2023-01-20’);
+ (102,’Mehmet Tag’, 4.5, ‘Izmir, ‘2023-01-20’);
 
 INSERT INTO fen_lisesi (adres,isim,derece)
 -- Degerleri girerken dikkat edilmesi gereken Tabloyu olustururken degerleri atadigimiz veri cinsinden olmasi
@@ -164,8 +164,8 @@ FROM ogretmen_lisesi
 WHERE sinav_notu between 70 AND 80;
 
 -- String ifadeleri BETWEEN komutu ile kiyaslamak istedigimizde bize sonucu ASCII-alfabetik degerlerine gore siralayarak gonderir.
-String yani char olan isimleri önce kendi otomatik olarak ascii ye gore yani alfabetik olarak siraliyor. Aralık tabloda olmayan bir isim ile verilirse, o isim tabloda olsa nerede olurdu diyip ona göre listeyi getirir. 
-Örneğin tabloda Ahmet Gül ve Mesut Yılmaz var. Between Ahmet and Mesut dersek, listede bu sadece isim olan recordlar olmadığından Ahmet’i Ahmet Gül’ün gerisine, Mesut’u da Mesut Yılmaz’in bir gerisine koyar. Bize de sadece listede olan Ahmet Gül’ü getirir.
+ String yani char olan isimleri önce kendi otomatik olarak ascii ye gore yani alfabetik olarak siraliyor. Aralık tabloda olmayan bir isim ile verilirse, o isim tabloda  olsa nerede olurdu diyip ona göre listeyi getirir. 
+ Örneğin tabloda Ahmet Gül ve Mesut Yılmaz var. Between Ahmet and Mesut dersek, listede bu sadece isim olan recordlar olmadığından Ahmet’i Ahmet Gül’ün gerisine,  Mesut’u da Mesut Yılmaz’in bir gerisine koyar. Bize de sadece listede olan Ahmet Gül’ü getirir.
 - field içindeki string değere yanlışlıkla boşluk space dahi koysa onu almaz, cunku onu asil ismin sonrasina koyar.
 
 -String ifadelerde kendi neyi getireceğini bulmak için önce ascii'ye göre sıralama yapar, ama bize dondururken
