@@ -281,7 +281,7 @@ WHERE REGEXP_LIKE (kelime, 'h[A-Z]t','c');
 -- Q6 : 2. harfi O olan 3 harfli kelimeleri (o harfi buyuk olanlari)  ve id'lerini listeleyiniz
 WHERE REGEXP_LIKE (kelime, '^[!-~]O[!-~]$','c');  
 
-#25)UPDATE :
+#26)UPDATE :
 Tabloda varolan herhangi bir record'a ait verinin degistirilmesi icin kullanilir.
 -----Syntax-----
 UPDATE table_name
@@ -335,7 +335,7 @@ SET veli_isim = (SELECT ders_adi
 			 FROM puanlar
              WHERE cocuklar.id = puanlar.ogrenci_id);
 
-#26)PRIMARY KEY :
+#27)PRIMARY KEY :
 1) Primary Key bir record'u tanimlayan bir field veya birden fazla field'in kombinasyonudur. 
 2) Primary Key Unique'dir. 
 3) Bir tabloda en fazla bir Primary Key olabilir .
@@ -378,7 +378,7 @@ bolum char(10),
 CONSTRAINT giris_yili_siralamasi_pk PRIMARY KEY (giris_yili,giris_siralamasi)
 );
 
-#27)FOREIGN KEY :
+#28)FOREIGN KEY :
 => Foreign Key iki tablo arasinda Relation olusturmak icin kullanilir. 
 => Foreign Key baska bir tablonun Primary Key'ine baglidir. 
 => Referenced table (baglanilan tablo, Primary Key'in oldugu Tablo) parent table olarak adlandirilir. 
@@ -423,7 +423,8 @@ puan INT,
 CONSTRAINT notlar_fk FOREIGN KEY (bebe_id)
 REFERENCES bebeler(id)
 );
-#28)DELETE:
+
+#29)DELETE:
 DELETE FROM table_name komutu tablodaki tum recordlari siler.
 Eger tum kayitlar silindikten sonra tabloyu gormek isterseniz size sadece bos bir tablo gosterir.
 DELETE komutu sadece datalari siler, tabloyu silmez.
@@ -446,7 +447,7 @@ DELETE FROM cucuklar
  DELETE FROM cucuklar
  WHERE veli_isim IN ('Ali', 'Ayse');
 
-#29)DELETE - TRUNCATE - DROP   
+#30)DELETE - TRUNCATE - DROP   
   => TRUNCATE TABLE komutu tablodaki tum datalari kalici olarak siler
   => Truncate ve Delete komutlarinin ikisi de bir tabloda bulunan recordlari silmek icin kullanilir.
   => Iki komut da sadece belirtilen tablodaki kayitlari siler.
@@ -471,7 +472,7 @@ DELETE FROM cucuklar
     -- Silme komutlari da iki basamaklidir, biz genelde geri getirilebilecek sekilde sileriz. 
     -- Ancak bazen guvenlik gibi sebeplerle geri getirilmeyecek sekilde silinmesi istenebilir.
 
-#30)SUBQUERY
+#31)SUBQUERY
     Sorgu icinde calisan sorguya SUBQUERY (ALT SORGU) denir.
 --Q Personel sayisi 15.000'den cok olan sirketlerin isimlerini
  ve bu sirkette calisan personelin isimlerini listeleyin
@@ -481,7 +482,7 @@ WHERE sirket IN (SELECT sirket
 		   FROM sirketler
                      	   WHERE calisanlar_sayisi>'15000');
 
-#31)SELECT ile SUBQUERY
+#32)SELECT ile SUBQUERY
   SELECT ile SUBQUERY kullanimi :
 -- SELECT -- hangi sutunlari(field) getirsin
 -- FROM -- hangi tablodan(table) getirsin
