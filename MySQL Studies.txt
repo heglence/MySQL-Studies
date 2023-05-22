@@ -17,7 +17,7 @@ bilgi veya veriden oluşan düzenli bir koleksiyondur.
 #5)Database'in Faydaları Nelerdir:
 	1)Yüksek miktarda bilgi depolanabilir.
 	2)Oluşturma, Okuma, Değiştirme ve Silme 	Kolaylığı
-  	 	Create,    Read, Update        ,Delete     	(CRUD)
+  	  Create,    Read, Update        ,Delete     	(CRUD)
 	3)Girişin kolay  ve kontrollü olması
 	4)Veriye ulaşım kolaylığı
 	5)Güvenlik
@@ -31,6 +31,7 @@ bilgi veya veriden oluşan düzenli bir koleksiyondur.
 -Raporlar oluşturur ve işletir.
 -Uygulamayı kontrol eder.
 -Diğer uygulamalarla (Application) iletişimi sağlar.
+
 #7)Relational Databes (İlişkili Tablo)(SQL)
 tabloları anlamlı kategorilere bölüp, tablolar arası bağ kurarız.
 Her tablo kendi içinde başka tablolarla bağ kurarak oluşturulur.
@@ -78,6 +79,7 @@ için bir vekil/tanımlayıcı (identify görevi görür, kısıtlamadır (const
 - primary key gerçek dış dünyada bir şeyi temsil ediyorsa Natural Key,
  tabloda kayıt için verilen ürün sıra numarası gibi bir değer ise Surrogate Key denir.
 -primary key'in tek başına var olması hiçbir anlam ifade etmez.
+
 #12)FOREİGN KEY 
 -primary key'i primary key yapan foreign key'dir.
 -2 tablo arasında relation-ilişki oluşturmak için kullanılır.
@@ -87,6 +89,7 @@ için bir vekil/tanımlayıcı (identify görevi görür, kısıtlamadır (const
   .Foreign Key olarak tanımlanan field'da tekrarlar olabilir. Yani unique olması şart değil, duplicate-kopyalara izin verebilir.
 -Bir tabloda birden fazla Foreign Key olabilir.
 -Değerleri farklı bir tablodaki Primary Key ile eşleşen bir sütun veya sütunların birleşimidir.
+
 #13)COMPOSITE KEY
 -Birden fazla field'ın kombinasyonu ile oluşturulur.
 -Bir field tek başına primary key özelliği taşımıyorsa oluşturulabilir.
