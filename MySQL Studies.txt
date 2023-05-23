@@ -146,6 +146,7 @@ DROP TABLE  fen_lisesi;  -- tabloyu siler.
 #2) Mevcut bir tabloya tüm field’lara değil daha az field’a veri girmek için
 	INSERT INTO anadolu_lisesi (okul_no, isim, derece) VALUES (‘1006’,’Mehmet Emre’, ‘4.2’);
 	Normalde adres vs field da var ama onları null kaydediyor. Tablo oluştururkenki sıraya koymamız şart değil ama insert yaparken iki parantez içinin sırası aynı olmalı.
+
 #19) SELECT-WHERE-AND
 Verileri SELECT komutu ile veritabanindan cekerken filtreleme yapmak icin : 
  
