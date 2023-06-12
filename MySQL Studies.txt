@@ -11,7 +11,7 @@ SQL-Kisa Notlar:
 Bir yazılımın başka bir yazılımda tanımlanmış işlevlerini kullanabilmesi için
 oluşturulmuş bir arayüzdür.
 
-#4)Database nedir: Veritabanı-verilerin depolandığı yer.
+#4) Database nedir: Veritabanı-verilerin depolandığı yer.
 Verilerin saklandığı her yer  database'dir. beyin,defter vs.
 Elektronik olarak bir bilgisayar sisteminde depolanan yapılandırılmış
 bilgi veya veriden oluşan düzenli bir koleksiyondur.
@@ -34,30 +34,30 @@ bilgi veya veriden oluşan düzenli bir koleksiyondur.
 -Uygulamayı kontrol eder.
 -Diğer uygulamalarla (Application) iletişimi sağlar.
 
-#7)Relational Databes (İlişkili Tablo)(SQL)
+#7) Relational Databes (İlişkili Tablo)(SQL)
 tabloları anlamlı kategorilere bölüp, tablolar arası bağ kurarız.
 Her tablo kendi içinde başka tablolarla bağ kurarak oluşturulur.
 Relational Databases , SQL Databases (Structured Query Language) olarak da adlandırılır.
-
-#8)SQL tablolar dataları ilişkili tablolarda depolar.
+ 
+#8) SQL tablolar dataları ilişkili tablolarda depolar.
 -Tablolar arası ilişkiler net olmalıdır.
 Tablolar arası geçiş kolay olmalıdır.
 Tabloların ve ilişkilerin bütününe SCHEMA denir.
 
-#9)NoSQL(Non-Relational Databases) veritabanı verilerle çalışırken Yapılandırılmamış 
+#9) NoSQL(Non-Relational Databases) veritabanı verilerle çalışırken Yapılandırılmamış 
   sorgu dili kullanır.
 
-#10)SQL KOMUTLARI
+#10) SQL KOMUTLARI
 4 ana gruba ayrılır.
 .1)Veri Sorgulama Dili (DQL)
 SELECT: Veritabanındaki verileri alır.
 
-.2)Veri Kullanma Dili (DML) (Tablo içindeki verileri)
+.2) Veri Kullanma Dili (DML) (Tablo içindeki verileri)
 INSERT:Veritabanına yeni veri ekler.
 UPDATE:Veritabanındaki verileri günceller.
 DELETE:Veritabanındaki verileri siler.
 
-.3)Veri Tanımlama Dili (DDL) (Tabloları)
+.3) Veri Tanımlama Dili (DDL) (Tabloları)
 CREATE:Veritabanı veya veritabanı içinde tablo oluşturur.
 ALTER: Veritabanı veya veritabanı içinde tabloyu günceller.
 DROP: Veritabanı veya veritabanı içinde tabloyu siler.
@@ -209,7 +209,7 @@ WHERE field_name IN (deger1,deger2,...);
 
 --Ornek :
 Q1:Personel tablosundan Id'si 10001, 10005 ya da 10008 olan 
-personel isimlerini listeleyin
+personel isimlerini listeleyin.
 -
 SELECT isim
 FROM personel
@@ -267,11 +267,11 @@ WHERE REGEXP_LIKE(kelime,'ot|at', 'c' );  -- ot ve at'tan sonra yada önce boşl
 -- Q1 : Kelimeler Tablosundan 'ho' veya 'hi' ile baslayan kelimeleri case-sensitive'e dikkat etmeksizin listele
 SElect kelime
 FROM kelimeler
-WHERE REGEXP_LIKE (kelime, '^ho|^hi'); -- insensitive dedigi icin 'i' ye gerek duymadık, yazila da bilirdi
+WHERE REGEXP_LIKE (kelime, '^ho|^hi'); -- insensitive dedigi icin 'i' ye gerek duymadık, yazila da bilirdi.
 
 -- NOT : [!-~] = Butun karakterleri ifade eder.
 --       [a-zA-Z0-9] = Harf ve rakamlari temsil eder.
--- Q3 : h ile baslayip t ile biten 3 harfli kelimeleri (h ile t kucuk harfli olanlari) listeleyiniz
+-- Q3 : h ile baslayip t ile biten 3 harfli kelimeleri (h ile t kucuk harfli olanlari) listeleyiniz.
 WHERE REGEXP_LIKE (kelime, 'h[!-~]t','c');
 
 -- Q4 : h ile baslayip t ile biten, 2. karakteri rakam olan 3 harfli kelimeleri (h ile t kucuk harfli olanlari) listeleyiniz
