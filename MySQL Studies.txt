@@ -66,7 +66,7 @@ DROP: Veritabanı veya veritabanı içinde tabloyu siler.
 GRANT:Bir kullanıcıya yetki vermek için.
 REVOKE:Bir kullanıcıya verilen yetkiyi geri almak için kullanılır.
 
-#11)PRIMARY KEY (birincil anahtar):
+#11) PRIMARY KEY (birincil anahtar):
 - bir veri tablosunda yer alan her record
 için bir vekil/tanımlayıcı (identify görevi görür, kısıtlamadır (constraint) ve eşsizdir (unique).
  -çoğunlukla tek bir alan olsa da birden fazla alanın birleşimiyle de oluşturulabilir.
@@ -82,7 +82,7 @@ için bir vekil/tanımlayıcı (identify görevi görür, kısıtlamadır (const
  tabloda kayıt için verilen ürün sıra numarası gibi bir değer ise Surrogate Key denir.
 -primary key'in tek başına var olması hiçbir anlam ifade etmez.
 
-#12)FOREİGN KEY 
+#12) FOREİGN KEY 
 -primary key'i primary key yapan foreign key'dir.
 -2 tablo arasında relation-ilişki oluşturmak için kullanılır.
 -Foreign key başka bir tablodaki Primary Key ile ilişkilendirilmiş olmalıdır.
@@ -92,17 +92,17 @@ için bir vekil/tanımlayıcı (identify görevi görür, kısıtlamadır (const
 -Bir tabloda birden fazla Foreign Key olabilir.
 -Değerleri farklı bir tablodaki Primary Key ile eşleşen bir sütun veya sütunların birleşimidir.
 
-#13)COMPOSITE KEY
+#13) COMPOSITE KEY
 -Birden fazla field'ın kombinasyonu ile oluşturulur.
 -Bir field tek başına primary key özelliği taşımıyorsa oluşturulabilir.
 -örnek üni no.12-01-06-0098
 
-#14)UNIQUE KEY (benzersiz)
+#14) UNIQUE KEY (benzersiz)
 -Bir tabloda birden fazla olabilir.(bir field'da değil ,tabloda birden fazla unique field olabilir.
 - Field içinde birden fazla  NULL değer alabilir. Ancak data tipi String ise ‘ ‘ hiçlik değerini sadece 1 kez alabilir.
 -Duplication-çift kullanım'a izin vermez.
 
-#15)ONE TO ONE RELATION (Bire bir ilişki)
+#15) ONE TO ONE RELATION (Bire bir ilişki)
 -1 adet tablo büyüyünce ikiye bölüp, ilkindeki primary key ikinci tabloda foreign key olmuştur.
 -(kendi yorumum.iki tabloda da tek field primary key ortaktır. bir record sadece diğer tablodaki bir record ile eşleşir.
 
@@ -141,7 +141,7 @@ table olustururken field isminin yanina NOT NULL yaziyoruz. . -- <isim VARCHAR (
 -- UNIQUE olarak belirledigimiz bir field'a istedigimiz kadar NULL deger kaydedebiliriz
 -- ancak data tipi String ise hiclik ifadesini sadece 1 kere kaydeder, diger kayitlarda duplicate hatasi verir.
 
-#18))DROP TABLE:  
+#18) DROP TABLE:  
 DROP TABLE  fen_lisesi;  -- tabloyu siler.
 #2) Mevcut bir tabloya tüm field’lara değil daha az field’a veri girmek için
 	INSERT INTO anadolu_lisesi (okul_no, isim, derece) VALUES (‘1006’,’Mehmet Emre’, ‘4.2’);
