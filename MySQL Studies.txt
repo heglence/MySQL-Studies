@@ -131,7 +131,7 @@ INSERT INTO fen_lisesi (adres,isim,derece)
 -- ayrica MySQL 'in default tarih formati YYYY-MM-DD seklindedir.
 -- char string bir deger ama icine sadece sayi mesela okul no girersek tek tirnak icine almasak da oluyor.
 
-#17)UNIQUE,NOT NULL:
+#17) UNIQUE,NOT NULL:
 -> Bir field'a kaydedilecek verileri UNIQUE yapmak icin   -- <okul_no CHAR(3) UNIQUE,>
  table olustururken field isminin yanina UNIQUE yaziyoruz.
 -> Bir field'a kaydedilecek verilerde null olmasin istiyorsak 
@@ -187,7 +187,7 @@ FROM table_name
 WHERE field_name 
 BETWEEN deger1 AND deger2;
 
-#21)AND (ve) Operatoru kullanimi:
+#21) AND (ve) Operatoru kullanimi:
 => And ile belirtilen sartlarin tamami gerceklesiyorsa o kayit listelenir,
 Sartlardan bir tanesi bile tutmazsa listelenmez.
 SELECT * FROM matematik WHERE sinav1 < 50 AND sinav2 < 50
@@ -199,7 +199,7 @@ sartlardan hicbiri gerceklesmiyorsa o kayit listelenmez.
 SELECT * FROM matematik WHERE sinav1 < 50 OR sinav2 < 50
 Bu ornekte sinav1 veya sinav2 field'i 50'den kucuk olan kayitlar listelenecektir.
 
-#23)SELECT-IN : 
+#23) SELECT-IN : 
 IN birden fazla mantiksal ifade ile tanimlayabilecegimiz durumlari tek komutla yazabilme
 imkani verir. IN icerisine yazacagimiz sartlar ayni field'a ait olmali.
 -----Syntax-----
@@ -284,7 +284,7 @@ WHERE REGEXP_LIKE (kelime, 'h[A-Z]t','c');
 -- Q6 : 2. harfi O olan 3 harfli kelimeleri (o harfi buyuk olanlari)  ve id'lerini listeleyiniz
 WHERE REGEXP_LIKE (kelime, '^[!-~]O[!-~]$','c');  
 
-#26)UPDATE :
+#26) UPDATE :
 Tabloda varolan herhangi bir record'a ait verinin degistirilmesi icin kullanilir.
 -----Syntax-----
 UPDATE table_name
@@ -381,7 +381,7 @@ bolum char(10),
 CONSTRAINT giris_yili_siralamasi_pk PRIMARY KEY (giris_yili,giris_siralamasi)
 );
 
-#28)FOREIGN KEY :
+#28) FOREIGN KEY :
 => Foreign Key iki tablo arasinda Relation olusturmak icin kullanilir. 
 => Foreign Key baska bir tablonun Primary Key'ine baglidir. 
 => Referenced table (baglanilan tablo, Primary Key'in oldugu Tablo) parent table olarak adlandirilir. 
@@ -475,7 +475,7 @@ DELETE FROM cucuklar
     -- Silme komutlari da iki basamaklidir, biz genelde geri getirilebilecek sekilde sileriz. 
     -- Ancak bazen guvenlik gibi sebeplerle geri getirilmeyecek sekilde silinmesi istenebilir.
 
-#31)SUBQUERY
+#31) SUBQUERY
     Sorgu icinde calisan sorguya SUBQUERY (ALT SORGU) denir.
 --Q Personel sayisi 15.000'den cok olan sirketlerin isimlerini
  ve bu sirkette calisan personelin isimlerini listeleyin
@@ -485,7 +485,7 @@ WHERE sirket IN (SELECT sirket
 		   FROM sirketler
                      	   WHERE calisanlar_sayisi>'15000');
 
-#32)SELECT ile SUBQUERY
+#32) SELECT ile SUBQUERY
   SELECT ile SUBQUERY kullanimi :
 -- SELECT -- hangi sutunlari(field) getirsin
 -- FROM -- hangi tablodan(table) getirsin
