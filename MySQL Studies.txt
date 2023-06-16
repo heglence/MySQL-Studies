@@ -338,7 +338,7 @@ SET veli_isim = (SELECT ders_adi
 			 FROM puanlar
              WHERE cocuklar.id = puanlar.ogrenci_id);
 
-#27)PRIMARY KEY :
+#27) PRIMARY KEY :
 1) Primary Key bir record'u tanimlayan bir field veya birden fazla field'in kombinasyonudur. 
 2) Primary Key Unique'dir. 
 3) Bir tabloda en fazla bir Primary Key olabilir .
@@ -427,7 +427,7 @@ CONSTRAINT notlar_fk FOREIGN KEY (bebe_id)
 REFERENCES bebeler(id)
 );
 
-#29)DELETE:
+#29) DELETE:
 DELETE FROM table_name komutu tablodaki tum recordlari siler.
 Eger tum kayitlar silindikten sonra tabloyu gormek isterseniz size sadece bos bir tablo gosterir.
 DELETE komutu sadece datalari siler, tabloyu silmez.
