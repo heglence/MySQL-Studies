@@ -178,7 +178,7 @@ WHERE sinav_notu between 70 AND 80;
 tablodaki siralama neyse ona gore dondurur(mesela id'ye göre). istediğimiz field'in ascii sirasina göre değil.
 -BETWEEN komutu ile belli bir araliktaki kayitlari listelemek  istedigimizde;filtrelemeyi verilen araliga gore yapar, yazdirmayi da tablodaki kayit sirasina gore yapar once ascii ye gore isimleri listeler,  listede yoksa isimler olsaydi nerede olurdu  tablodaki sirasina gore siralayiip getirir.
 
-#20)SELECT-BETWEEN :
+#20) SELECT-BETWEEN :
 BETWEEN iki mantiksal ifade ile tanimlayabilecegimiz durumlari tek komutla 
 yazabilme imkani verir, yazdigimiz iki sinirda araliga dahildir.
 -----Syntax-----
@@ -215,7 +215,7 @@ SELECT isim
 FROM personel
 WHERE id IN (10001,10005,10008);
 
-#24)SELECT-LIKE :
+#24) SELECT-LIKE :
 LIKE keyword sorgulama yaparken belirli patternleri kullanabilmemize olanak saglar.
 -----Syntax-----
  SELECT field1,field2,...
@@ -247,7 +247,7 @@ WHERE isim NOT LIKE  '%A%';
 --Ornek: 5 haneli olan  '_____'
 --Ornek: a harfi olmayan  '%A%'
 
-#25)SELECT-REGEXP_LIKE :
+#25) SELECT-REGEXP_LIKE :
  Daha karmasik pattern ile sorgulama islemi icin REGEXP_LIKE kullanilabilir.
   -- 'c' => case-sensitive demektir
   -- 'i' => case-insensitive demektir ve default case-insensitive aktiftir.
@@ -450,7 +450,7 @@ DELETE FROM cucuklar
  DELETE FROM cucuklar
  WHERE veli_isim IN ('Ali', 'Ayse');
 
-#30)DELETE - TRUNCATE - DROP   
+#30) DELETE - TRUNCATE - DROP   
   => TRUNCATE TABLE komutu tablodaki tum datalari kalici olarak siler
   => Truncate ve Delete komutlarinin ikisi de bir tabloda bulunan recordlari silmek icin kullanilir.
   => Iki komut da sadece belirtilen tablodaki kayitlari siler.
